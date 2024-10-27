@@ -1,0 +1,32 @@
+.card {
+    background-color: white;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    padding-block: 10px 25px;
+}
+
+.cardHeading {
+    font-size: 1.85rem;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.cardSubHeading {
+    display: inline;
+    font-weight: 600;
+}
+
+.cardUl>li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.cardDescriptionUl {
+
+    >li:first-child {
+        margin-top: 0.25em;
+    }
+
+    >li:not(:last-child) {
+        margin-bottom: 0.25em;
+    }
+}

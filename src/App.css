@@ -1,38 +1,42 @@
 .App {
+  --shadow: 2px 8px 20px -2px #777;
+
+  padding-block: 40px;
+}
+
+.pokemonCardContainer {
+  padding-inline: 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  align-items: stretch;
+  gap: 20px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 25px;
+}
+
+.buttons>* {
   color: white;
-}
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: cornflowerblue;
+  padding-block: 0.25em;
+  padding-inline: 1em;
+  border: none;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: all 0.2s;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  &:hover {
+    transform: translateY(2.5px);
+    background-color: slateblue;
+    box-shadow: none;
   }
 }

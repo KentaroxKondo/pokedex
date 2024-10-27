@@ -1,0 +1,8 @@
+h1 {
+    background-color: orange;
+    padding-block: 0.15em;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
